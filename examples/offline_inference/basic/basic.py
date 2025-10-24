@@ -15,8 +15,9 @@ sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
 
 
 def main():
+    model_path = "/data/wlj/pretrained/Qwen/Qwen3-1.7B"
     # Create an LLM.
-    llm = LLM(model="facebook/opt-125m")
+    llm = LLM(model=model_path)
     # Generate texts from the prompts.
     # The output is a list of RequestOutput objects
     # that contain the prompt, generated text, and other information.
